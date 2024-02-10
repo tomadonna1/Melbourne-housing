@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Melbourne Home Price Prediction</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="img"></div>
+
+    <h1>Melbourne Home Price Prediction</h1>
+    <h2>Enter the details to know the price</h2>
+
+	<h3>Building area</h3>
+    <input class="buildingarea" type="text" id="buildingarea" name="buildingarea" value="1000">
+    <!-- 'class' is for CSS; 'type' is the input type; 'name' is for HTTP request; 'value' is the initial value -->
+
+    <h3>Building size</h3>
+    <input class="landsize" type="text" id="landsize" name="landsize" value="2000">
+
+    <h3>Distance from CBD</h3>
+    <input class="distance" type="text" id="distance" name="distance" value="5">
+
+    <h3>Year Built</h3>
+    <input class="yearbuilt" type="text" id="yearbuilt" name="yearbuilt" value="1999">
+
+    <h3>Lattitude</h3>
+    <input class="lattitude" type="text" id="lattitude" name="lattitude" value="-37">
+
+    <h3>Longtitude</h3>
+    <input class="longtitude" type="text" id="longtitude" name="longtitude" value="144">
+
+    <form class="form">
+        <h3>House Type</h3>
+        <div class="switch-field">
+            <input type="radio" id="radio-type-1" name="house_type" value="0" checked/>
+            <label for="radio-type-1">House</label>
+            <input type="radio" id="radio-type-2" name="house_type" value="1" />
+            <label for="radio-type-2">Town House</label>
+            <input type="radio" id="radio-type-3" name="house_type" value="2"/>
+            <label for="radio-type-3">Unit</label>
+        </div>
+    </form>
+
+
+    <form class="form">
+        <h3>Parking slot(s)</h3>
+        <div class="switch-field">
+            <input type="radio" id="radio-car-1" name="car" value="1" checked/>
+            <label for="radio-car-1">1</label>
+            <input type="radio" id="radio-car-2" name="car" value="2"/>
+            <label for="radio-car-2">2</label>
+            <input type="radio" id="radio-car-3" name="car" value="3"/>
+            <label for="radio-car-3">3</label>
+            <input type="radio" id="radio-car-4" name="car" value="4"/>
+            <label for="radio-car-4">4</label>
+            <input type="radio" id="radio-car-5" name="car" value="5"/>
+            <label for="radio-car-5">5</label>
+            <input type="radio" id="radio-car-6" name="car" value="6"/>
+            <label for="radio-car-6">6</label>
+            <input type="radio" id="radio-car-7" name="car" value="7"/>
+            <label for="radio-car-7">7</label>
+            <input type="radio" id="radio-car-8" name="car" value="8"/>
+            <label for="radio-car-8">8</label>
+            
+        </div>
+    </form>
+
+    <form class="form">
+        <h3>Bathroom</h3>
+        <div class="switch-field">
+            <input type="radio" id="radio-bath-1" name="bathroom" value="1"/>
+            <label for="radio-bath-1">1</label>
+            <input type="radio" id="radio-bath-2" name="bathroom" value="2" checked/>
+            <label for="radio-bath-2">2</label>
+            <input type="radio" id="radio-bath-3" name="bathroom" value="3"/>
+            <label for="radio-bath-3">3</label>
+            <input type="radio" id="radio-bath-4" name="bathroom" value="4"/>
+            <label for="radio-bath-4">4</label>
+            <input type="radio" id="radio-bath-5" name="bathroom" value="5"/>
+            <label for="radio-bath-5">5</label>
+            <input type="radio" id="radio-bath-6" name="bathroom" value="6"/>
+            <label for="radio-bath-6">6</label>
+            <input type="radio" id="radio-bath-7" name="bathroom" value="7"/>
+            <label for="radio-bath-7">7</label>
+            <input type="radio" id="radio-bath-8" name="bathroom" value="8"/>
+            <label for="radio-bath-8">8</label>
+            
+        </div>
+    </form>
+
+    <form class="form">
+        <h3>Bedroom</h3>
+        <div class="switch-field">
+            <input type="radio" id="radio-bed-1" name="bedroom" value="1"/>
+            <label for="radio-bed-1">1</label>
+            <input type="radio" id="radio-bed-2" name="bedroom" value="2" checked/>
+            <label for="radio-bed-2">2</label>
+            <input type="radio" id="radio-bed-3" name="bedroom" value="3"/>
+            <label for="radio-bed-3">3</label>
+            <input type="radio" id="radio-bed-4" name="bedroom" value="4"/>
+            <label for="radio-bed-4">4</label>
+            <input type="radio" id="radio-bed-5" name="bedroom" value="5"/>
+            <label for="radio-bed-5">5</label>
+            <input type="radio" id="radio-bed-6" name="bedroom" value="6"/>
+            <label for="radio-bed-6">6</label>
+            <input type="radio" id="radio-bed-7" name="bedroom" value="7"/>
+            <label for="radio-bed-7">7</label>
+            <input type="radio" id="radio-bed-8" name="bedroom" value="8"/>
+            <label for="radio-bed-8">8</label>
+        </div>
+    </form>
+
+
+	<h3>Location</h3>
+	<div>
+    <select class="location" name="" id="uiLocations">
+        <option value="" disabled="disabled" selected="selected">Choose a Location</option>
+		<option>Box Hill</option>
+        <option>CBD</option>
+    </select>
+
+
+    </div>
+
+
+	<button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+	<div id="uiEstimatedPrice" class="result">	<h2></h2> </div>
+
+
+
+
+</body>
+</html>

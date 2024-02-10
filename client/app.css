@@ -1,0 +1,10 @@
+.result{
+    background: #dcd686;
+    width: 30%;
+    border: 0;
+    margin: 25px 0 10px;
+    box-sizing: border-box;
+    font-size: 15px;
+    height: 35px;
+    /* text-align: center; */
+}
