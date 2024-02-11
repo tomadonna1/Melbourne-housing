@@ -59,7 +59,7 @@ def load_saved_artifacts():
 if __name__ == '__main__':
     load_saved_artifacts()
     print(get_location_names())
-    print(get_estimated_price("Airport West", 0, 13.5, 3, 1, 3, 614, 151.96765, 1964, -37.7194, 144.8827))
-    print(get_estimated_price("Sunshine West",1, 13.5, 3, 3, 1, 344, 178, 2004, -37.7967, 144.8083))
+    print(get_estimated_price("Airport West", 0, 13.5, 3, 1, 3, 614, 151, 1964, -37, 144))
+    print(get_estimated_price("Sunshine West",1, 21.3, 3, 2, 2, 173, 140, 2009, -37, 145))
     
     
